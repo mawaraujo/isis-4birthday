@@ -1,0 +1,185 @@
+<header class="presentation">
+  <div class="presentation--content">
+    <h3 class="presentation--content--subtitle heyam-font text-anim1">
+      Este episodio de
+    </h3>
+    <h2 class="presentation--content--title heyam-font text-anim2">Bluey</h2>
+    <h3 class="presentation--content--subtitle heyam-font text-anim3">
+      Se llama
+    </h3>
+
+    <img
+      width="100%"
+      height="100%"
+      class="presentation--content--bluey-and-bingo"
+      src="/images/bluey-and-bingo.png"
+      alt="Bluey and Bingo"
+    />
+
+    <img
+      title="Kiwi"
+      class="presentation--content--balloon kiwi"
+      src="/images/balloon.png"
+      alt="Balloon"
+    />
+    <img
+      title="Windgust"
+      class="presentation--content--balloon windgust"
+      src="/images/balloon.png"
+      alt="Balloon"
+    />
+    <img
+      title="Lightning Bolt"
+      class="presentation--content--balloon lightning-bolt"
+      src="/images/balloon.png"
+      alt="Balloon"
+    />
+    <img
+      title="Dronigan"
+      class="presentation--content--balloon dronigan"
+      src="/images/balloon.png"
+      alt="Balloon"
+    />
+
+    <h1 class="presentation--content--title2 heyam-font">
+      Isis cumple <span class="lilitaOne-font">4</span>
+    </h1>
+  </div>
+</header>
+
+<style scoped>
+  .presentation {
+    min-height: 100dvh;
+    height: 100%;
+    width: 100%;
+    background-color: linear-gradient(#84ccfe);
+    background: linear-gradient(
+      180deg,
+      #84ccfe,
+      #84ccfe,
+      #84ccfe,
+      #84ccfe,
+      #84ccfe,
+      #84ccfe,
+      #84ccfe,
+      #84ccfe,
+      #f8f0f0,
+      #f8ebeb 100%
+    );
+    color: white;
+    padding: 3rem 0 15rem 0;
+  }
+
+  .presentation--content {
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    position: relative;
+  }
+
+  .presentation--content .presentation--content--title {
+    font-size: clamp(6rem, 12vw, 20rem);
+    z-index: 1;
+  }
+
+  .presentation--content .presentation--content--title2 {
+    font-size: clamp(2.5rem, 12vw, 5rem);
+    z-index: 1;
+  }
+
+  .presentation--content .presentation--content--subtitle {
+    font-size: clamp(2rem, 6vw, 2.5rem);
+    z-index: 1;
+  }
+
+  .presentation--content .presentation--content--bluey-and-bingo {
+    max-width: 200px;
+    margin-top: 2rem;
+    z-index: 1;
+  }
+
+  .presentation--content .presentation--content--balloon {
+    position: absolute;
+    z-index: 0;
+  }
+  
+  .presentation--content .presentation--content--balloon {
+    animation: balloonAnimation 5s ease-in-out alternate-reverse infinite;
+  }
+
+  .presentation--content .kiwi {
+    top: 350px;
+    left: 7%;
+    max-width: 250px;
+  }
+
+  .presentation--content .windgust {
+    top: 550px;
+    left: 25%;
+    max-width: 150px;
+  }
+
+  .presentation--content .lightning-bolt {
+    top: 750px;
+    left: 10%;
+    max-width: 100px;
+  }
+
+  .presentation--content .dronigan {
+    top: 500px;
+    right: 10%;
+    max-width: 240px;
+  }
+
+  @media (max-width: 768px) {
+    .presentation--content .kiwi {
+      left: 0%;
+      max-width: 100px;
+      top: 300px;
+    }
+
+    .presentation--content .windgust {
+      left: 0%;
+      max-width: 150px;
+      top: 400px;
+    }
+
+    .presentation--content .lightning-bolt {
+      left: 0%;
+      top: 570px;
+    }
+
+    .presentation--content .dronigan {
+      right: 0%;
+      max-width: 150px;
+      top: 340px;
+    }
+  }
+
+  @keyframes showAnim {
+    0% {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  .text-anim1 {
+    animation: showAnim 5s ease;
+  }
+  .text-anim2 {
+    animation: showAnim 5s ease;
+  }
+  .text-anim3 {
+    animation: showAnim 5s ease;
+  }
+</style>

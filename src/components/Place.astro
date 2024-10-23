@@ -1,0 +1,117 @@
+<div class="place">
+  <iframe
+    class="place--map"
+    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13121.002937838755!2d-58.3237784!3d-34.6988553!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3330067cf9fc5%3A0x7e77a7436effb4b!2sCafetino%20kids!5e0!3m2!1ses!2sar!4v1728524392765!5m2!1ses!2sar"
+    style="max-width: 500px; min-height: 350px; width: 100%; border:0"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
+  >
+  </iframe>
+
+  <img
+    title="Kiwi"
+    class="place--balloon kiwi"
+    src="/images/balloon.png"
+    alt="Balloon"
+  />
+  <img
+    title="Windgust"
+    class="place--balloon windgust"
+    src="/images/balloon.png"
+    alt="Balloon"
+  />
+  <img
+    title="Lightning Bolt"
+    class="place--balloon lightning-bolt"
+    src="/images/balloon.png"
+    alt="Balloon"
+  />
+  <img
+    title="Dronigan"
+    class="place--balloon dronigan"
+    src="/images/balloon.png"
+    alt="Balloon"
+  />
+  <img
+    title="Greeny"
+    class="place--balloon greeny"
+    src="/images/balloon.png"
+    alt="Balloon"
+  />
+
+  <p class="place--location subtitle poppins-font">
+    Av Mitre 5701 esquina Cotagaita. Wilde, Provincia de Buenos Aires, Argentina
+  </p>
+</div>
+
+<style scoped>
+  .place {
+    display: flex;
+    margin: 4rem 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    position: relative;
+  }
+
+  .place .place--map {
+    border-radius: 20px;
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  .place .place--balloon {
+    position: absolute;
+    z-index: 0;
+  }
+
+  @media(max-width: 880px) {
+    .place .place--balloon {
+      display: none;
+    }
+  }
+
+  .place .kiwi {
+    top: -180px;
+    left: -25%;
+    max-width: 200px;
+  }
+
+  .place .windgust {
+    top: 60px;
+    left: -20%;
+    transform: rotateZ(-30deg);
+    max-width: 150px;
+  }
+
+  .place .lightning-bolt {
+    top: 200px;
+    left: -10%;
+    transform: rotateZ(-50deg);
+    max-width: 100px;
+  }
+
+  .place .dronigan {
+    top: 150px;
+    right: -100px;
+    transform: rotateZ(-20deg);
+    max-width: 100px;
+  }
+
+
+  .place .greeny {
+    top: -50px;
+    right: -100px;
+    transform: rotateZ(-50deg);
+    max-width: 150px;
+  }
+
+  .place .place--location {
+    margin-top: 3rem;
+    color: #5a5a87;
+    font-size: 1.5rem;
+    max-width: 600px;
+  }
+</style>
